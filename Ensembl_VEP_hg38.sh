@@ -78,27 +78,3 @@ $VEP_PATH/vep --cache --offline \
 
 date >> out.log
 echo "Finished txt output"  >> out.log
-#$VEP_PATH/vep --cache --offline \
-#    --cache_version 104 \
-#        --merged \
-#    --assembly GRCh38 \
-#    --port 3337 \
-#    --dir_plugins $VEP_PLUGIN_DIR \
-#    --dir_cache $VEP_CACHE_DIR \
-#    -i $INPUT_VCF_PATH \
-#    -o ${OUTPUT_VCF_PATH}/${SAMPLE_ID}.txt \
-#    --fasta $VEP_FASTA \
-#    --everything \
-#    --check_existing \
-#    --fork 10 \
-#    --force_overwrite
-
-
-
-#    --plugin LoFtool \
-#    --plugin ExACpLI \
-#        --fasta $VEP_FASTA \
-#        --bam $ExACpLI_BAM \
-#    --plugin SpliceAI \
-#        --fork 10 \
-#        --force_overwrite
