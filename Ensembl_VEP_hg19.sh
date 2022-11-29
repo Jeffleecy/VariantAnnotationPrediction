@@ -51,7 +51,9 @@ $VEP_PATH/vep --cache --offline \
     --fork 10 \
     --force_overwrite
 
-#--plugin FlagLRG,${PLUGIN_DATA}/list_LRGs_transcripts_xrefs.txt \
+date >> out.log
+echo "Finished --vcf output"  >> out.log
+
 
 
 $VEP_PATH/vep --cache --offline \
@@ -75,4 +77,5 @@ $VEP_PATH/vep --cache --offline \
     --fork 10 \
     --force_overwrite
 
-#--plugin FlagLRG,${PLUGIN_DATA}/list_LRGs_transcripts_xrefs.txt \
+date >> out.log
+echo "Finished txt output"  >> out.log
